@@ -78,6 +78,7 @@ public class HomeFragment extends Fragment {
 		mAdapter = new PlayesListAdapter(getActivity(), null);
 		mListView.setAdapter(mAdapter);
 
+		LoadingProgress.show(mActivity, getString(R.string.loading), null);
 		new DownloadListDataTask(DOWNLOAD_LIST_DATA).execute(PROFILE_FEED_URL);
 
 		return rootView;
@@ -273,6 +274,8 @@ public class HomeFragment extends Fragment {
 				if (!TextUtils.isEmpty(headlineText)) {
 					mTextView.setText(headlineText);
 				}
+				
+				LoadingProgress.dismiss();
 				break;
 			}
 		}
