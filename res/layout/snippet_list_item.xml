@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="170dp" >
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="#BDC3C7"
+        android:scaleType="centerCrop" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:background="#be03A678"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/save_btn"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_activate_ticket_tick" />
+
+        <ImageView
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_activate_ticket_cross" />
+    </LinearLayout>
+
+</RelativeLayout>

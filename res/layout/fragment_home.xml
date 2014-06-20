@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imano.concurrency.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="#67809F"
+        android:layout_marginBottom="0dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_red"
+            android:padding="5dp"
+            android:text="Headlines"
+            android:textColor="@color/text_color_white" 
+             android:textStyle="bold"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/headline_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/text_color_white" 
+            android:textStyle="italic"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/playersList"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:dividerHeight="4dp"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+</RelativeLayout>
